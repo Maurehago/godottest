@@ -18,4 +18,4 @@ mono_crash.*.json
 _import/
 
 # Blender Backup
-.blend1
+*.blend1
