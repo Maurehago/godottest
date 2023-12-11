@@ -1,0 +1,6 @@
+# alles in diesem Ordner ignorieren
+*
+
+# ausser dieser Dateien
+!.gitignore
+!readme.md
