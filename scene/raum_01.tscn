@@ -1,0 +1,1307 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbggi1t7s2ysv"]
+
+[ext_resource type="ArrayMesh" uid="uid://bbjvaupukabj8" path="res://low/mesh/teile/boden.mesh" id="1_dunv7"]
+[ext_resource type="ArrayMesh" uid="uid://cf3nul21eg32d" path="res://low/mesh/teile/wand_2035.mesh" id="2_tk0cc"]
+[ext_resource type="ArrayMesh" uid="uid://csjv3iqp803fg" path="res://low/mesh/teile/wand_1035.mesh" id="3_m8ps1"]
+
+[node name="Raum01" type="Node3D"]
+
+[node name="Boden" type="Node3D" parent="."]
+
+[node name="Boden0" type="Node3D" parent="Boden"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -1)
+
+[node name="Boden2" type="MeshInstance3D" parent="Boden/Boden0"]
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden3" type="MeshInstance3D" parent="Boden/Boden0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden4" type="MeshInstance3D" parent="Boden/Boden0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden5" type="MeshInstance3D" parent="Boden/Boden0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden6" type="MeshInstance3D" parent="Boden/Boden0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden7" type="MeshInstance3D" parent="Boden/Boden0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden8" type="MeshInstance3D" parent="Boden/Boden0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden9" type="MeshInstance3D" parent="Boden/Boden0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden10" type="MeshInstance3D" parent="Boden/Boden0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden11" type="MeshInstance3D" parent="Boden/Boden0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden12" type="MeshInstance3D" parent="Boden/Boden0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden13" type="MeshInstance3D" parent="Boden/Boden0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden14" type="MeshInstance3D" parent="Boden/Boden0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden15" type="MeshInstance3D" parent="Boden/Boden0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden16" type="MeshInstance3D" parent="Boden/Boden0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden17" type="MeshInstance3D" parent="Boden/Boden0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden18" type="MeshInstance3D" parent="Boden/Boden0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden19" type="MeshInstance3D" parent="Boden/Boden0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden2" type="Node3D" parent="Boden"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0.5, 5)
+
+[node name="Boden2" type="MeshInstance3D" parent="Boden/Boden2"]
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden3" type="MeshInstance3D" parent="Boden/Boden2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden4" type="MeshInstance3D" parent="Boden/Boden2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden5" type="MeshInstance3D" parent="Boden/Boden2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden6" type="MeshInstance3D" parent="Boden/Boden2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden7" type="MeshInstance3D" parent="Boden/Boden2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden8" type="MeshInstance3D" parent="Boden/Boden2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden9" type="MeshInstance3D" parent="Boden/Boden2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden10" type="MeshInstance3D" parent="Boden/Boden2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden11" type="MeshInstance3D" parent="Boden/Boden2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden12" type="MeshInstance3D" parent="Boden/Boden2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden14" type="MeshInstance3D" parent="Boden/Boden2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden15" type="MeshInstance3D" parent="Boden/Boden2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden17" type="MeshInstance3D" parent="Boden/Boden2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden18" type="MeshInstance3D" parent="Boden/Boden2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden3" type="Node3D" parent="Boden"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -1)
+
+[node name="Boden2" type="MeshInstance3D" parent="Boden/Boden3"]
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden3" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden4" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden5" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden6" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden7" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden8" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden9" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden10" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden11" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden12" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden13" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden14" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden15" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden16" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden17" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden18" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden19" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden20" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden21" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden22" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden23" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden24" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden25" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden26" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden27" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden28" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden29" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden30" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden31" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden32" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden33" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden34" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden35" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden36" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden37" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden38" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden39" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden40" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden41" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden42" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden43" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden44" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden45" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden46" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden47" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden48" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden49" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden50" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden51" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden52" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden53" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden54" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden55" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden56" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden57" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden58" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden59" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden60" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden61" type="MeshInstance3D" parent="Boden/Boden3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden4" type="Node3D" parent="Boden"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -8)
+
+[node name="Boden2" type="MeshInstance3D" parent="Boden/Boden4"]
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden3" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden4" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden5" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden6" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden7" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden8" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden9" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden10" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden11" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden12" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden13" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden14" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden15" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden16" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden17" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden18" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden19" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden20" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden21" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden22" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden23" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden24" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden25" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden26" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden27" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden28" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden29" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden30" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden31" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden32" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden33" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden34" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden35" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden36" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden37" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden38" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden39" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden40" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.5, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden41" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden42" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden43" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.5, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden44" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden45" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden46" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.5, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden47" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden48" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden49" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.5, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden50" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden51" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden52" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.5, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden53" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden54" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden55" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.5, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden56" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0.5, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden57" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0.5, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden58" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0.5, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden59" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0.5, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden60" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0.5, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden61" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0.5, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden62" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden63" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 6)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden64" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 6)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden65" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 6)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden66" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 6)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden67" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 6)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden68" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 6)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden69" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.5, 6)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden70" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0.5, 6)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden71" type="MeshInstance3D" parent="Boden/Boden4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0.5, 6)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden5" type="Node3D" parent="Boden"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0.5, -8)
+
+[node name="Boden2" type="MeshInstance3D" parent="Boden/Boden5"]
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden3" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden4" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden5" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden6" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden7" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden8" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden9" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden10" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden11" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden12" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden13" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden14" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden15" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden16" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden17" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden18" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden19" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden20" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 0)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden23" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden26" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden29" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden32" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden35" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 5)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden39" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden40" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden42" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden43" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden45" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden46" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden48" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden49" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden51" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden52" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden54" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden55" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden41" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden44" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden47" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden50" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden53" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden57" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden58" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden60" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden61" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden66" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden67" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden68" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, -1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden56" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -4)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden59" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -3)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden69" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -2)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden72" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -1)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden62" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 6)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden63" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 6)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden64" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 6)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Boden65" type="MeshInstance3D" parent="Boden/Boden5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, 6)
+mesh = ExtResource("1_dunv7")
+skeleton = NodePath("../../..")
+
+[node name="Wand" type="Node3D" parent="."]
+
+[node name="Wand1" type="Node3D" parent="Wand"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -1)
+
+[node name="Wand2035" type="MeshInstance3D" parent="Wand/Wand1"]
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand1035" type="MeshInstance3D" parent="Wand/Wand1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("3_m8ps1")
+skeleton = NodePath("../../..")
+
+[node name="Wand5" type="Node3D" parent="Wand"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5, 0, 5)
+
+[node name="Wand2035" type="MeshInstance3D" parent="Wand/Wand5"]
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand1035" type="MeshInstance3D" parent="Wand/Wand5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("3_m8ps1")
+skeleton = NodePath("../../..")
+
+[node name="Wand8" type="Node3D" parent="Wand"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, 5)
+
+[node name="Wand2035" type="MeshInstance3D" parent="Wand/Wand8"]
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand2036" type="MeshInstance3D" parent="Wand/Wand8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand2037" type="MeshInstance3D" parent="Wand/Wand8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand11" type="Node3D" parent="Wand"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 5, 0, -1)
+
+[node name="Wand2035" type="MeshInstance3D" parent="Wand/Wand11"]
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand2036" type="MeshInstance3D" parent="Wand/Wand11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand2037" type="MeshInstance3D" parent="Wand/Wand11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand12" type="Node3D" parent="Wand"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9, 0, -8)
+
+[node name="Wand2035" type="MeshInstance3D" parent="Wand/Wand12"]
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand2036" type="MeshInstance3D" parent="Wand/Wand12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand2037" type="MeshInstance3D" parent="Wand/Wand12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand2038" type="MeshInstance3D" parent="Wand/Wand12"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 0)
+mesh = ExtResource("3_m8ps1")
+skeleton = NodePath("../../..")
+
+[node name="Wand13" type="Node3D" parent="Wand"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 9, 0, -0.999999)
+
+[node name="Wand2035" type="MeshInstance3D" parent="Wand/Wand13"]
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand2036" type="MeshInstance3D" parent="Wand/Wand13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand9" type="Node3D" parent="Wand"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 8)
+
+[node name="Wand2035" type="MeshInstance3D" parent="Wand/Wand9"]
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand2036" type="MeshInstance3D" parent="Wand/Wand9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand1036" type="MeshInstance3D" parent="Wand/Wand9"]
+transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 4, 0, 4.76837e-07)
+mesh = ExtResource("3_m8ps1")
+skeleton = NodePath("../../..")
+
+[node name="Wand10" type="Node3D" parent="Wand"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5, 0, 5)
+
+[node name="Wand2035" type="MeshInstance3D" parent="Wand/Wand10"]
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand2036" type="MeshInstance3D" parent="Wand/Wand10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand1036" type="MeshInstance3D" parent="Wand/Wand10"]
+transform = Transform3D(1, 0, -7.10543e-15, 0, 1, 0, 7.10543e-15, 0, 1, 4, 0, 4.76837e-07)
+mesh = ExtResource("3_m8ps1")
+skeleton = NodePath("../../..")
+
+[node name="Wand6" type="Node3D" parent="Wand"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5, 0, 8)
+
+[node name="Wand2035" type="MeshInstance3D" parent="Wand/Wand6"]
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand1035" type="MeshInstance3D" parent="Wand/Wand6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("3_m8ps1")
+skeleton = NodePath("../../..")
+
+[node name="Wand7" type="Node3D" parent="Wand"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0, 0, 5)
+
+[node name="Wand2035" type="MeshInstance3D" parent="Wand/Wand7"]
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand1035" type="MeshInstance3D" parent="Wand/Wand7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("3_m8ps1")
+skeleton = NodePath("../../..")
+
+[node name="Wand2" type="Node3D" parent="Wand"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5, 0, -1)
+
+[node name="Wand2035" type="MeshInstance3D" parent="Wand/Wand2"]
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand2036" type="MeshInstance3D" parent="Wand/Wand2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand1035" type="MeshInstance3D" parent="Wand/Wand2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+mesh = ExtResource("3_m8ps1")
+skeleton = NodePath("../../..")
+
+[node name="Wand3" type="Node3D" parent="Wand"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 0, -8)
+
+[node name="Wand2035" type="MeshInstance3D" parent="Wand/Wand3"]
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand2036" type="MeshInstance3D" parent="Wand/Wand3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
+
+[node name="Wand2037" type="MeshInstance3D" parent="Wand/Wand3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+mesh = ExtResource("3_m8ps1")
+skeleton = NodePath("../../..")
+
+[node name="Wand4" type="Node3D" parent="Wand"]
+transform = Transform3D(1.06066, 0, 0.707107, 0, 1, 0, -1.06066, 0, 0.707107, -5, 0, -6)
+
+[node name="Wand2035" type="MeshInstance3D" parent="Wand/Wand4"]
+mesh = ExtResource("2_tk0cc")
+skeleton = NodePath("../../..")
