@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://cuvmrx20saj5q"]
+
+[ext_resource type="ArrayMesh" uid="uid://couxhihqt6naf" path="res://scene/boden/boden_01.mesh" id="1_1d3oj"]
+[ext_resource type="ArrayMesh" uid="uid://c8ek0ok1qpqca" path="res://scene/boden/boden_02.mesh" id="2_8nsba"]
+[ext_resource type="ArrayMesh" uid="uid://bepefd45hnoaw" path="res://scene/boden/boden_03.mesh" id="3_svxno"]
+[ext_resource type="ArrayMesh" uid="uid://cljl7kuk4pyl7" path="res://scene/boden/boden_04.mesh" id="4_ct4pv"]
+[ext_resource type="ArrayMesh" uid="uid://bjjsxq14ecl68" path="res://scene/boden/boden_05.mesh" id="5_5kk57"]
+
+[node name="boden" type="Node3D"]
+
+[node name="boden_01" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -1)
+mesh = ExtResource("1_1d3oj")
+skeleton = NodePath("")
+
+[node name="boden_02" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -5, 0.5, 8)
+mesh = ExtResource("2_8nsba")
+skeleton = NodePath("")
+
+[node name="boden_03" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -5, 0, 5)
+mesh = ExtResource("3_svxno")
+skeleton = NodePath("")
+
+[node name="boden_04" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, -5, 0, -1)
+mesh = ExtResource("4_ct4pv")
+skeleton = NodePath("")
+
+[node name="boden_05" type="MeshInstance3D" parent="."]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 2, 0.5, -1)
+mesh = ExtResource("5_5kk57")
+skeleton = NodePath("")

@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnljtj02mym3e"]
+
+[ext_resource type="ArrayMesh" uid="uid://eac3lh60c72p" path="res://scene/teile/wall.mesh" id="1_uj033"]
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_fvy2u"]
+data = PackedVector3Array(0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 1, 0, 1, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 0, 1, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1)
+
+[node name="teile" type="Node3D"]
+
+[node name="wall" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+mesh = ExtResource("1_uj033")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="wall"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_fvy2u")
+
+[node name="wall_001" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 0.201786, 2.56556, 0, 0)
+mesh = ExtResource("1_uj033")
+skeleton = NodePath("")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="wall_001"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="wall_001/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_fvy2u")

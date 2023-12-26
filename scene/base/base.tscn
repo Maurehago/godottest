@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcivyhq83u64"]
+
+[ext_resource type="ArrayMesh" uid="uid://dj8wfmy7pssob" path="res://scene/base/figur.mesh" id="1_qgyyb"]
+
+[node name="base" type="Node3D"]
+
+[node name="Figur" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_qgyyb")
+skeleton = NodePath("")
