@@ -3,7 +3,7 @@ extends EditorScenePostImport
 
 # Speicherpfade
 var save_path: String
-var mat_path: String = "res://low/mat/"
+var mat_path: String = "res://42/mat/"
 var scene_path: String = "res://scene/"
 
 # DirAccess

@@ -1,10 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://dbggi1t7s2ysv"]
+[gd_scene load_steps=6 format=3 uid="uid://dbggi1t7s2ysv"]
 
 [ext_resource type="ArrayMesh" uid="uid://bbjvaupukabj8" path="res://low/mesh/teile/boden.mesh" id="1_dunv7"]
 [ext_resource type="ArrayMesh" uid="uid://cf3nul21eg32d" path="res://low/mesh/teile/wand_2035.mesh" id="2_tk0cc"]
 [ext_resource type="ArrayMesh" uid="uid://csjv3iqp803fg" path="res://low/mesh/teile/wand_1035.mesh" id="3_m8ps1"]
+[ext_resource type="ArrayMesh" uid="uid://reqex8yx7334" path="res://low/mesh/teile/paneel_10.mesh" id="4_7oe3v"]
+[ext_resource type="ArrayMesh" uid="uid://unilemmk6gkc" path="res://low/mesh/teile/wall.mesh" id="5_2trff"]
 
 [node name="Raum01" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.320055, 0.384142, 0, 0.768284, 0.64011, -0.5, 0.554351, -0.665353, 0, 0, 0)
+shadow_enabled = true
 
 [node name="Boden" type="Node3D" parent="."]
 
@@ -1117,6 +1123,7 @@ skeleton = NodePath("../../..")
 
 [node name="Wand1" type="Node3D" parent="Wand"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -1)
+visible = false
 
 [node name="Wand2035" type="MeshInstance3D" parent="Wand/Wand1"]
 mesh = ExtResource("2_tk0cc")
@@ -1267,6 +1274,7 @@ skeleton = NodePath("../../..")
 
 [node name="Wand2" type="Node3D" parent="Wand"]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5, 0, -1)
+visible = false
 
 [node name="Wand2035" type="MeshInstance3D" parent="Wand/Wand2"]
 mesh = ExtResource("2_tk0cc")
@@ -1305,3 +1313,307 @@ transform = Transform3D(1.06066, 0, 0.707107, 0, 1, 0, -1.06066, 0, 0.707107, -5
 [node name="Wand2035" type="MeshInstance3D" parent="Wand/Wand4"]
 mesh = ExtResource("2_tk0cc")
 skeleton = NodePath("../../..")
+
+[node name="Panel" type="Node3D" parent="Wand"]
+
+[node name="Paneel10" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, -1)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel26" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, 5)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel32" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5, 0, 5)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel46" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5, 0, 5)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel51" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 5, 0, -1)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel57" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9, 0.5, -1)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel61" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 9, 0.5, -8)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel62" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 9, 0.5, -7)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel63" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 9, 0.5, -6)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel64" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 9, 0.5, -5)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel65" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 9, 0.5, -4)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel66" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 9, 0.5, -3)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel67" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 9, 0.5, -2)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel58" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 8, 0.5, -1)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel59" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 7, 0.5, -1)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel60" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6, 0.5, -1)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel52" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 5, 0, -1.07288e-06)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel53" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 5, 0, 0.999999)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel54" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 5, 0, 2)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel55" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 5, 0, 3)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel56" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 5, 0, 4)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel47" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 4, 0, 5)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel48" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3, 0, 5)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel49" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2, 0, 5)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel50" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 1, 0, 5)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel35" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 2.98023e-07, 0.5, 8)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel43" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.82703e-08, 0.5, 5)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel44" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 1.49404e-07, 0.5, 6)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel45" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 2.80539e-07, 0.5, 7)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel36" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -1, 0.5, 8)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel37" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2, 0.5, 8)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel38" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3, 0.5, 8)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel39" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4, 0.5, 8)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel40" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5, 0.5, 8)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel41" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5, 0.5, 7)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel42" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5, 0.5, 6)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel33" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6, 0, 5)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel34" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7, 0, 5)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel27" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, 4)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel28" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, 3)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel29" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, 2)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel30" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, 1)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel31" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8, 0, 0)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel11" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -1)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel12" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 0, -1)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel13" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5, 0, -1)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel14" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5, 0, -2)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel15" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5, 0, -3)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel16" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5, 0, -4)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel17" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5, 0, -5)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel18" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(0.636396, 0, 0.707107, 0, 1, 0, -0.636396, 0, 0.707107, -5, 0, -6)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel19" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(0.700036, 0, 0.707107, 0, 1, 0, -0.700036, 0, 0.707107, -4.3636, 0, -6.6364)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel25" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(0.667308, 0, 0.707107, 0, 1, 0, -0.667308, 0, 0.707107, -3.66357, 0, -7.33643)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel20" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1, 0, 5.96046e-08, 0, 1, 0, -5.96046e-08, 0, 1, -3, 0, -8)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel21" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1, 0, 5.96046e-08, 0, 1, 0, -5.96046e-08, 0, 1, -2, 0, -8)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel22" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1, 0, 5.96046e-08, 0, 1, 0, -5.96046e-08, 0, 1, -1, 0, -8)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel23" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1, 0, 5.96046e-08, 0, 1, 0, -5.96046e-08, 0, 1, 0, 0, -8)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Paneel24" type="MeshInstance3D" parent="Wand/Panel"]
+transform = Transform3D(1, 0, 5.96046e-08, 0, 1, 0, -5.96046e-08, 0, 1, 1, 0, -8)
+mesh = ExtResource("4_7oe3v")
+skeleton = NodePath("../../..")
+
+[node name="Wand_full" type="Node3D" parent="."]
+
+[node name="Wall" type="MeshInstance3D" parent="Wand_full"]
+transform = Transform3D(3, 0, 0, 0, 3.5, 0, 0, 0, 0.1, -8, 0, -1.1)
+mesh = ExtResource("5_2trff")
+skeleton = NodePath("../..")
+
+[node name="Wall2" type="MeshInstance3D" parent="Wand_full"]
+transform = Transform3D(-2.22928e-07, 0, 0.1, 0, 3.5, 0, -5.1, 0, -4.37114e-09, -5.1, 0, -1.1)
+mesh = ExtResource("5_2trff")
+skeleton = NodePath("../..")
