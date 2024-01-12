@@ -1,23 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://brewj7d3pa25t"]
+[gd_scene load_steps=20 format=3 uid="uid://brewj7d3pa25t"]
 
-[ext_resource type="PackedScene" uid="uid://cuvmrx20saj5q" path="res://scene/boden/boden.tscn" id="1_mxikc"]
-[ext_resource type="PackedScene" uid="uid://ds23i8rwcciv8" path="res://scene/wand/wand.tscn" id="2_od2mm"]
-[ext_resource type="PackedScene" uid="uid://dnk3jtjbsf6c0" path="res://42/player3D/first_person3D.tscn" id="3_i0da8"]
-
-[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_wfh6e"]
-sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
-
-[sub_resource type="Sky" id="Sky_jprsi"]
-sky_material = SubResource("ProceduralSkyMaterial_wfh6e")
-
-[sub_resource type="Environment" id="Environment_enmbf"]
-background_mode = 2
-sky = SubResource("Sky_jprsi")
-tonemap_mode = 2
-ssao_enabled = true
-sdfgi_enabled = true
-glow_enabled = true
+[ext_resource type="ArrayMesh" uid="uid://cxbv5dvj5rfku" path="res://scene/teile/boden.mesh" id="1_yvbk5"]
+[ext_resource type="ArrayMesh" uid="uid://i5s4xqvcpciq" path="res://scene/teile/wand_1.mesh" id="2_8rorl"]
+[ext_resource type="ArrayMesh" uid="uid://42pfnjn6sq8x" path="res://scene/teile/ceiling.mesh" id="3_1hpr1"]
+[ext_resource type="ArrayMesh" uid="uid://tam70wj86b7f" path="res://scene/teile/balken.mesh" id="4_l2csq"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_1h3mr"]
 size = Vector3(13, 0.6, 13)
@@ -28,16 +14,81 @@ size = Vector3(7, 0.6, 11)
 [sub_resource type="BoxShape3D" id="BoxShape3D_4oh7h"]
 size = Vector3(5, 0.6, 3.1)
 
+[sub_resource type="MultiMesh" id="MultiMesh_8mhbf"]
+transform_format = 1
+instance_count = 84
+mesh = ExtResource("1_yvbk5")
+buffer = PackedFloat32Array(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 7, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 7, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 7, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 7, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 7, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 7, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 8, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 8, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 8, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 8, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 8, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 8, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 9, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 9, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 9, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 9, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 9, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 9, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 10, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 10, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 10, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 10, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 10, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 10, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 11, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 11, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 11, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 11, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 11, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 11, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 12, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 12, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 12, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 12, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 12, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 12, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 13, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 13, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 13, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 13, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 13, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 13, 0, 1, 0, 0, 0, 0, 1, 5)
+
+[sub_resource type="MultiMesh" id="MultiMesh_wgqwy"]
+transform_format = 1
+instance_count = 49
+mesh = ExtResource("1_yvbk5")
+buffer = PackedFloat32Array(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 6, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 6, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 6, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 6, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 6, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 6, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 6)
+
+[sub_resource type="MultiMesh" id="MultiMesh_mbejv"]
+transform_format = 1
+instance_count = 77
+mesh = ExtResource("1_yvbk5")
+buffer = PackedFloat32Array(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 6, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 7, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 8, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 9, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 10, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 6, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 7, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 8, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 9, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 10, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 6, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 7, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 8, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 9, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 10, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 6, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 7, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 8, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 9, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 10, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 6, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 7, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 8, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 9, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 10, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 6, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 7, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 8, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 9, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 10, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 3, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 4, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 5, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 6, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 7, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 8, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 9, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 10)
+
+[sub_resource type="MultiMesh" id="MultiMesh_g05pn"]
+transform_format = 1
+instance_count = 15
+mesh = ExtResource("1_yvbk5")
+buffer = PackedFloat32Array(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 2, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 2)
+
+[sub_resource type="MultiMesh" id="MultiMesh_qj8jp"]
+transform_format = 1
+instance_count = 3
+mesh = ExtResource("2_8rorl")
+buffer = PackedFloat32Array(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 0)
+
+[sub_resource type="MultiMesh" id="MultiMesh_axgd2"]
+transform_format = 1
+instance_count = 7
+mesh = ExtResource("2_8rorl")
+buffer = PackedFloat32Array(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 0)
+
+[sub_resource type="MultiMesh" id="MultiMesh_rha6x"]
+transform_format = 1
+instance_count = 6
+mesh = ExtResource("2_8rorl")
+buffer = PackedFloat32Array(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 0)
+
+[sub_resource type="MultiMesh" id="MultiMesh_aulbc"]
+transform_format = 1
+instance_count = 3
+mesh = ExtResource("2_8rorl")
+buffer = PackedFloat32Array(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 0)
+
+[sub_resource type="MultiMesh" id="MultiMesh_ywyvl"]
+transform_format = 1
+instance_count = 5
+mesh = ExtResource("2_8rorl")
+buffer = PackedFloat32Array(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 0)
+
+[sub_resource type="MultiMesh" id="MultiMesh_6pcfa"]
+transform_format = 1
+instance_count = 6
+mesh = ExtResource("2_8rorl")
+buffer = PackedFloat32Array(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 0)
+
+[sub_resource type="MultiMesh" id="MultiMesh_hb43s"]
+transform_format = 1
+instance_count = 6
+mesh = ExtResource("2_8rorl")
+buffer = PackedFloat32Array(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 0)
+
+[sub_resource type="MultiMesh" id="MultiMesh_qe4dd"]
+transform_format = 1
+instance_count = 7
+mesh = ExtResource("2_8rorl")
+buffer = PackedFloat32Array(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 2, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 3, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 4, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 5, 0, 1, 0, 0, 0, 0, 1, 0, 1, 0, 0, 6, 0, 1, 0, 0, 0, 0, 1, 0)
+
 [node name="Raum_1" type="Node3D"]
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource("Environment_enmbf")
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.866025, -0.320055, 0.384142, 0, 0.768284, 0.64011, -0.5, 0.554351, -0.665353, 0, 0, 0)
-shadow_enabled = true
-
-[node name="boden" parent="." instance=ExtResource("1_mxikc")]
+[node name="boden" type="Node3D" parent="."]
 metadata/_edit_group_ = true
 
 [node name="StaticBody3D" type="StaticBody3D" parent="boden"]
@@ -54,7 +105,153 @@ shape = SubResource("BoxShape3D_a2tll")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0.3, 6.55)
 shape = SubResource("BoxShape3D_4oh7h")
 
-[node name="wand" parent="." instance=ExtResource("2_od2mm")]
+[node name="boden1" type="MultiMeshInstance3D" parent="boden"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.1, -1)
+multimesh = SubResource("MultiMesh_8mhbf")
 
-[node name="CharacterBody3D" parent="." instance=ExtResource("3_i0da8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.194456, 0)
+[node name="boden2" type="MultiMeshInstance3D" parent="boden"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0.1, -8)
+multimesh = SubResource("MultiMesh_wgqwy")
+
+[node name="boden4" type="MultiMeshInstance3D" parent="boden"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.6, -12)
+multimesh = SubResource("MultiMesh_mbejv")
+
+[node name="boden3" type="MultiMeshInstance3D" parent="boden"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0.6, 5)
+multimesh = SubResource("MultiMesh_g05pn")
+
+[node name="wand" type="Node3D" parent="."]
+metadata/_edit_group_ = true
+
+[node name="wand1" type="MultiMeshInstance3D" parent="wand"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0.1, -1.1)
+multimesh = SubResource("MultiMesh_qj8jp")
+
+[node name="wand2" type="MultiMeshInstance3D" parent="wand"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.1, 0.1, -1)
+multimesh = SubResource("MultiMesh_axgd2")
+
+[node name="wand3" type="MultiMeshInstance3D" parent="wand"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0.1, -8.1)
+multimesh = SubResource("MultiMesh_axgd2")
+
+[node name="wand4" type="MultiMeshInstance3D" parent="wand"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.1, 0.1, 5)
+multimesh = SubResource("MultiMesh_rha6x")
+
+[node name="wand5" type="MultiMeshInstance3D" parent="wand"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5, 0.1, 5.1)
+multimesh = SubResource("MultiMesh_aulbc")
+
+[node name="wand6" type="MultiMeshInstance3D" parent="wand"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.6, 8.1)
+multimesh = SubResource("MultiMesh_ywyvl")
+
+[node name="wand7" type="MultiMeshInstance3D" parent="wand"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 6, 0.1, 5.1)
+multimesh = SubResource("MultiMesh_6pcfa")
+
+[node name="wand8" type="MultiMeshInstance3D" parent="wand"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 6.1, 0.1, -1)
+multimesh = SubResource("MultiMesh_hb43s")
+
+[node name="wand9" type="MultiMeshInstance3D" parent="wand"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 9, 0.6, -0.9)
+multimesh = SubResource("MultiMesh_aulbc")
+
+[node name="wand10" type="MultiMeshInstance3D" parent="wand"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 9.1, 0.6, -8)
+multimesh = SubResource("MultiMesh_qe4dd")
+
+[node name="wand11" type="MultiMeshInstance3D" parent="wand"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 0.1, 0.6, 5)
+multimesh = SubResource("MultiMesh_aulbc")
+
+[node name="wand12" type="MultiMeshInstance3D" parent="wand"]
+transform = Transform3D(-2.38419e-07, 0, 1, 0, 1, 0, -1, 0, -2.38419e-07, -5.1, 0.6, 8)
+multimesh = SubResource("MultiMesh_aulbc")
+
+[node name="decke" type="Node3D" parent="."]
+
+[node name="decke1" type="MeshInstance3D" parent="decke"]
+transform = Transform3D(3, 0, 0, 0, 0.15, 0, 0, 0, 6, -8, 3.6, -1)
+mesh = ExtResource("3_1hpr1")
+skeleton = NodePath("../..")
+
+[node name="decke2" type="MeshInstance3D" parent="decke"]
+transform = Transform3D(7, 0, 0, 0, 0.15, 0, 0, 0, 7, -5, 3.6, -8)
+mesh = ExtResource("3_1hpr1")
+skeleton = NodePath("../..")
+
+[node name="decke3" type="MeshInstance3D" parent="decke"]
+transform = Transform3D(11, 0, 0, 0, 0.15, 0, 0, 0, 6, -5, 3.6, -1)
+mesh = ExtResource("3_1hpr1")
+skeleton = NodePath("../..")
+
+[node name="decke4" type="MeshInstance3D" parent="decke"]
+transform = Transform3D(5, 0, 0, 0, 0.15, 0, 0, 0, 3, -5, 3.6, 5)
+mesh = ExtResource("3_1hpr1")
+skeleton = NodePath("../..")
+
+[node name="balken" type="Node3D" parent="."]
+
+[node name="Balken" type="MeshInstance3D" parent="balken"]
+transform = Transform3D(0.2, 0, 0, 0, 3.4, 0, 0, 0, 0.2, -5.1, 0, -1.1)
+mesh = ExtResource("4_l2csq")
+skeleton = NodePath("../..")
+
+[node name="Balken7" type="MeshInstance3D" parent="balken"]
+transform = Transform3D(0.2, 0, 0, 0, 3.4, 0, 0, 0, 0.2, 1.7, 0, -1)
+mesh = ExtResource("4_l2csq")
+skeleton = NodePath("../..")
+
+[node name="Balken4" type="MeshInstance3D" parent="balken"]
+transform = Transform3D(0.2, 0, 0, 0, -6.98508e-07, -0.2, 0, 15.98, -8.74228e-09, -5, 3.5, -8)
+mesh = ExtResource("4_l2csq")
+skeleton = NodePath("../..")
+
+[node name="Balken8" type="MeshInstance3D" parent="balken"]
+transform = Transform3D(-8.74228e-09, 14, -8.74228e-09, 0, -6.11959e-07, -0.2, -0.2, -6.11959e-07, 3.82137e-16, -8, 3.5, 5)
+mesh = ExtResource("4_l2csq")
+skeleton = NodePath("../..")
+
+[node name="Balken9" type="MeshInstance3D" parent="balken"]
+transform = Transform3D(-8.74228e-09, 14, -8.74228e-09, 0, -6.11959e-07, -0.2, -0.2, -6.11959e-07, 3.82137e-16, -8, 3.5, -0.8)
+mesh = ExtResource("4_l2csq")
+skeleton = NodePath("../..")
+
+[node name="Balken10" type="MeshInstance3D" parent="balken"]
+transform = Transform3D(-8.74228e-09, 14, -8.74228e-09, 0, -6.11959e-07, -0.2, -0.2, -6.11959e-07, 3.82137e-16, -8, 3.5, 2.1)
+mesh = ExtResource("4_l2csq")
+skeleton = NodePath("../..")
+
+[node name="Balken11" type="MeshInstance3D" parent="balken"]
+transform = Transform3D(-8.74228e-09, 6.9, -8.74228e-09, 0, -3.01609e-07, -0.2, -0.2, -3.01609e-07, 3.82137e-16, -5, 3.5, -3.4)
+mesh = ExtResource("4_l2csq")
+skeleton = NodePath("../..")
+
+[node name="Balken12" type="MeshInstance3D" parent="balken"]
+transform = Transform3D(-8.74228e-09, 6.9, -8.74228e-09, 0, -3.01609e-07, -0.2, -0.2, -3.01609e-07, 3.82137e-16, -5, 3.5, -5.8)
+mesh = ExtResource("4_l2csq")
+skeleton = NodePath("../..")
+
+[node name="Balken5" type="MeshInstance3D" parent="balken"]
+transform = Transform3D(0.2, 0, 0, 0, -5.68248e-07, -0.2, 0, 13, -8.74228e-09, 1.8, 3.5, -8)
+mesh = ExtResource("4_l2csq")
+skeleton = NodePath("../..")
+
+[node name="Balken6" type="MeshInstance3D" parent="balken"]
+transform = Transform3D(0.2, 0, 0, 0, -6.98508e-07, -0.2, 0, 15.98, -8.74228e-09, -1.6, 3.5, -8)
+mesh = ExtResource("4_l2csq")
+skeleton = NodePath("../..")
+
+[node name="Balken2" type="MeshInstance3D" parent="balken"]
+transform = Transform3D(0.2, 0, 0, 0, 3.4, 0, 0, 0, 0.2, -5.1, 0, 4.9)
+mesh = ExtResource("4_l2csq")
+skeleton = NodePath("../..")
+
+[node name="Balken3" type="MeshInstance3D" parent="balken"]
+transform = Transform3D(0.2, 0, 0, 0, 3.4, 0, 0, 0, 0.2, -0.1, 0, 4.9)
+mesh = ExtResource("4_l2csq")
+skeleton = NodePath("../..")
